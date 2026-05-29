@@ -96,9 +96,3 @@ Designed the AI-based target selection subsystem for multi-UAV combat scenarios.
 **Erzurum Technical University** — B.Sc. Computer Engineering (English) · 2022–2027
 **Politechnika Lubelska** — Erasmus+ Exchange · GPA 3.74/4.0 · Oct 2024 – Feb 2025
 
----
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hasanbahcecii&show_icons=true&theme=transparent&hide_border=true&title_color=0077B5&icon_color=0077B5" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hasanbahcecii&layout=compact&theme=transparent&hide_border=true&title_color=0077B5" width="45%"/>
-</div>
