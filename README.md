@@ -1,40 +1,104 @@
 <div align="center">
-  <h1>Hasan Bahceci</h1>
-  <h3>Computer Engineering & AI/ML & Mobile</h3>
-  <a href="https://www.linkedin.com/in/hasanbahceci"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:hasan.bahceci021@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <h1>Hasan Bahçeci</h1>
+  <h3>Computer Engineering Student · AI/ML Engineer in Training</h3>
+  <p>Building end-to-end AI systems — from architecture design to production deployment</p>
+
+  <a href="https://www.linkedin.com/in/hasanbahceci">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:hasan.bahceci021@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://hasanbahceci-voice-assistant.hf.space">
+    <img src="https://img.shields.io/badge/🎙️ Voice Demo-FF4B4B?style=for-the-badge"/>
+  </a>
 </div>
 
 ---
 
-## ⚙️ About Me
-I am a Computer Engineering student specializing in **Deep Learning Architectures** and **Production-Grade Mobile Development**. My work focuses on building optimized AI models for autonomous systems and scalable applications, bridging the gap between theoretical data science and real-world engineering.
+## 🚀 Featured Projects
 
-## 🛠️ Technical Stack
+### 🎙️ LLM-Powered Voice Assistant
+**STT → LLM (OpenAI / Hugging Face) → TTS · Wake Word · 14-module architecture**
 
-**AI & Machine Learning**
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white)
-> *PyTorch, TensorFlow/Keras, NumPy, Pandas, Scikit-learn, Deep Learning (CNN, RNN, LSTM, GRU, TCN, GNN, Transformer), Time-Series Forecasting, Computer Vision*
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HuggingFace-yellow?style=flat-square)](https://hasanbahceci-voice-assistant.hf.space)
+[![GitHub](https://img.shields.io/badge/GitHub-voice__assistant-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/voice_assistant)
 
-**Software, Mobile & Embedded Systems**
-![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat-square&logo=Flutter&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)
-> *Python, C/C++, SQL, Git, Linux (Ubuntu), REST APIs, FastAPI, Streamlit, Flutter (Dart), Verilog, STM32, Arduino*
+End-to-end voice assistant with dual-backend LLM (OpenAI + Hugging Face), real-time speech recognition, neural TTS (Edge TTS), and wake-word detection — modular architecture enabling independent provider swap.
 
 ---
 
-## 💼 Core Engineering Experience
+### 🌫️ Air Quality Forecasting — LSTM Pipeline
+**PyTorch · FastAPI · Streamlit · Multivariate Time-Series**
 
-### 1. ETUKEN UAV Team (TEKNOFEST)
-* **Role:** AI/ML Software Member
-* **Engineering Impact:** Designed an AI-based target selection subsystem for multi-UAV combat scenarios. Benchmarked TCN, GNN+GRU, and Transformer models, ultimately deploying a Full Transformer with temporal and spatial attention for 1 Hz integration on the ground control station.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://air-quality-prediction-ehb9tnezgfquw42hvveumr.streamlit.app)
+[![API](https://img.shields.io/badge/API-Render-46E3B7?style=flat-square)](https://air-quality-api-wuxw.onrender.com/docs)
+[![GitHub](https://img.shields.io/badge/GitHub-air--quality--prediction-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/air-quality-prediction)
 
-### 2. WellAge - Health Tech Application
-* **Role:** Flutter Developer
-* **Engineering Impact:** Engineered an accessibility-focused mobile app with on-device sensors and background processing for step tracking and medication alerts, leading it through closed beta to Google Play submission readiness.
+Forecasts hourly NO₂ concentration from 72-hour multivariate sensor data (UCI Air Quality). Full pipeline: missing-value interpolation → normalization → sliding-window sequencing → LSTM → FastAPI → Streamlit UI.
 
-<br>
+`MAE: 46.65 μg/m³ · RMSE: 59.73 μg/m³`
+
+---
+
+### 🐾 Cat vs Dog Classifier — Transfer Learning
+**TensorFlow · MobileNetV2 · ONNX Runtime · Streamlit**
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://hasanbahcecii-cat-dog-image-classifier-app-gtgtuq.streamlit.app)
+[![GitHub](https://img.shields.io/badge/GitHub-cat--dog--classifier-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/cat-dog-image-classifier-cnn)
+
+Binary image classifier using MobileNetV2 (ImageNet pre-trained) with 2-phase training: feature extraction (frozen base) → fine-tuning (top 30 layers), with data augmentation pipeline.
+
+`Test Accuracy: 98.70% · Dataset: 8K train / 2K test`
+
+---
+
+### 🎯 ETÜKEN UAV Target Selection (TEKNOFEST)
+**PyTorch · Transformer · GNN · TCN · Edge AI**
+
+Designed the AI-based target selection subsystem for multi-UAV combat scenarios. Engineered an 8-D feature vector (relative position, bearing/heading differentials, escape velocity) and benchmarked TCN, GNN+GRU, and a Full Transformer with temporal + spatial attention and permutation invariance. Transformer selected for production — integrated at 1 Hz on the ground control station.
+
+---
+
+## 🛠️ Tech Stack
+
+**AI / Machine Learning**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+`Deep Learning (CNN · RNN · LSTM · GRU · TCN · GNN · Transformer) · Transfer Learning · Time-Series Forecasting · Computer Vision · NLP`
+
+**Deployment & Tools**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+
+`REST APIs · OpenAI API · Hugging Face · ONNX Runtime · Docker (learning)`
+
+**Mobile & Embedded**
+
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+
+`Flutter (Dart) · C/C++ · STM32 · Verilog · Arduino`
+
+---
+
+## 🎓 Education
+
+**Erzurum Technical University** — B.Sc. Computer Engineering (English) · 2022–2027
+**Politechnika Lubelska** — Erasmus+ Exchange · GPA 3.74/4.0 · Oct 2024 – Feb 2025
+
+---
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hasanbahcecii&show_icons=true&theme=transparent&hide_border=true&title_color=0077B5" alt="GitHub Stats" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hasanbahcecii&layout=compact&theme=transparent&hide_border=true&title_color=0077B5" alt="Top Languages" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=hasanbahcecii&show_icons=true&theme=transparent&hide_border=true&title_color=0077B5&icon_color=0077B5" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hasanbahcecii&layout=compact&theme=transparent&hide_border=true&title_color=0077B5" width="45%"/>
 </div>
