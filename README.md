@@ -18,13 +18,35 @@
 
 ## 🚀 Featured Projects
 
+### 🎯 UAV Target Selection — TEKNOFEST Combat UAV
+**PyTorch · Transformer · GNN · TCN · Multi-Architecture Benchmark**
+
+[![GitHub](https://img.shields.io/badge/GitHub-uav--target--selection-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/uav-target-selection)
+
+Benchmarked 4 architectures (TCN, TCN+GlobalContext, GNN+GRU, Full Transformer) on 15,000 synthetic multi-UAV combat scenarios (9 behaviour types, 1.18M labelled samples). Full Transformer achieved **91.5% val accuracy vs. 82.2% TCN baseline (+9.3 pp)** — selected for ground station deployment. Dual-attention: temporal (6-timestep history) + spatial (inter-UAV).
+
+`91.5% val acc · 137K params · <1ms GPU inference · 1 Hz telemetry budget`
+
+---
+
 ### 🎙️ LLM-Powered Voice Assistant
 **STT → LLM (OpenAI / Hugging Face) → TTS · Wake Word · 14-module architecture**
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-HuggingFace-yellow?style=flat-square)](https://hasanbahceci-voice-assistant.hf.space)
 [![GitHub](https://img.shields.io/badge/GitHub-voice__assistant-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/voice_assistant)
 
-End-to-end voice assistant with dual-backend LLM (OpenAI + Hugging Face), real-time speech recognition, neural TTS (Edge TTS), and wake-word detection — modular architecture enabling independent provider swap.
+End-to-end voice assistant with dual-backend LLM (OpenAI + Hugging Face), real-time speech recognition, neural TTS, and wake-word detection — modular architecture enabling hot-swap provider with no code change.
+
+---
+
+### 🔧 Sensor Fault Detection — LSTM-FCN
+**PyTorch · SMOTE · Failure Analysis · UCI SECOM**
+
+[![GitHub](https://img.shields.io/badge/GitHub-sensor--fault--detection-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/sensor-fault-detection)
+
+Dual-branch LSTM-FCN on 590-sensor semiconductor manufacturing data (93/7 class imbalance). Leakage-free pipeline: split → scale → SMOTE (train only). Diagnosed model limitation via PCA (13% variance) + t-SNE — faulty samples lack separable structure; RF baseline confirmed dataset-level root cause.
+
+`Macro F1: 0.55 vs dummy baseline 0.48 · 266K params · Failure analysis documented`
 
 ---
 
@@ -35,28 +57,21 @@ End-to-end voice assistant with dual-backend LLM (OpenAI + Hugging Face), real-t
 [![API](https://img.shields.io/badge/API-Render-46E3B7?style=flat-square)](https://air-quality-api-wuxw.onrender.com/docs)
 [![GitHub](https://img.shields.io/badge/GitHub-air--quality--prediction-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/air-quality-prediction)
 
-Forecasts hourly NO₂ concentration from 72-hour multivariate sensor data (UCI Air Quality). Full pipeline: missing-value interpolation → normalization → sliding-window sequencing → LSTM → FastAPI → Streamlit UI.
+Forecasts hourly NO₂ from 72-step multivariate sensor stream (UCI Air Quality). Full pipeline: imputation → normalization → sliding-window → LSTM → FastAPI → Streamlit UI.
 
-`MAE: 46.65 μg/m³ · RMSE: 59.73 μg/m³`
+`MAE: 46.65 μg/m³ vs persistence baseline ~72 μg/m³ (~35% improvement)`
 
 ---
 
-### 🐾 Cat vs Dog Classifier — Transfer Learning
+### 🐾 Cat vs Dog Classifier — Transfer Learning + ONNX
 **TensorFlow · MobileNetV2 · ONNX Runtime · Streamlit**
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://hasanbahcecii-cat-dog-image-classifier-app-gtgtuq.streamlit.app)
 [![GitHub](https://img.shields.io/badge/GitHub-cat--dog--classifier-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/cat-dog-image-classifier-cnn)
 
-Binary image classifier using MobileNetV2 (ImageNet pre-trained) with 2-phase training: feature extraction (frozen base) → fine-tuning (top 30 layers), with data augmentation pipeline.
+MobileNetV2 transfer learning (2-phase: frozen extraction → fine-tuning) with data augmentation. Exported to ONNX for CPU-efficient inference.
 
-`Test Accuracy: 98.70% · Dataset: 8K train / 2K test`
-
----
-
-### 🎯 ETÜKEN UAV Target Selection (TEKNOFEST)
-**PyTorch · Transformer · GNN · TCN · Edge AI**
-
-Designed the AI-based target selection subsystem for multi-UAV combat scenarios. Engineered an 8-D feature vector (relative position, bearing/heading differentials, escape velocity) and benchmarked TCN, GNN+GRU, and a Full Transformer with temporal + spatial attention and permutation invariance. Transformer selected for production — integrated at 1 Hz on the ground control station.
+`Test Accuracy: 98.70% · ~14ms CPU inference (ONNX)`
 
 ---
 
@@ -70,7 +85,7 @@ Designed the AI-based target selection subsystem for multi-UAV combat scenarios.
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
-`Deep Learning (CNN · RNN · LSTM · GRU · TCN · GNN · Transformer) · Transfer Learning · Time-Series Forecasting · Computer Vision · NLP`
+`CNN · RNN · LSTM · GRU · TCN · GNN · Transformer · Transfer Learning · Time-Series · Computer Vision`
 
 **Deployment & Tools**
 
@@ -80,19 +95,17 @@ Designed the AI-based target selection subsystem for multi-UAV combat scenarios.
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-`REST APIs · OpenAI API · Hugging Face · ONNX Runtime · Docker (learning)`
+`REST APIs · OpenAI API · Hugging Face · ONNX Runtime`
 
 **Mobile & Embedded**
 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 
-`Flutter (Dart) · C/C++ · STM32 · Verilog · Arduino`
+`C/C++ · STM32 · Arduino · Verilog · Flutter (Dart)`
 
 ---
 
 ## 🎓 Education
 
-**Erzurum Technical University** — B.Sc. Computer Engineering (English) · 2022–2027
+**Erzurum Technical University** — B.Sc. Computer Engineering (English) · 2022–2027  
 **Politechnika Lubelska** — Erasmus+ Exchange · GPA 3.74/4.0 · Oct 2024 – Feb 2025
-
