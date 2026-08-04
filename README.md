@@ -108,4 +108,4 @@ MobileNetV2 transfer learning (2-phase: frozen extraction → fine-tuning) with 
 ## 🎓 Education
 
 **Erzurum Technical University** — B.Sc. Computer Engineering (English) · 2022–2027  
-**Politechnika Lubelska** — Erasmus+ Exchange · GPA 3.74/4.0 · Oct 2024 – Feb 2025
+**Politechnika Lubelska** — Erasmus+ Exchange · Oct 2024 – Feb 2025
