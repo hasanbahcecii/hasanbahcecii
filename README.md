@@ -130,7 +130,7 @@ Dual-backend LLM (OpenAI + HuggingFace), real-time STT, neural TTS, wake-word de
 | | |
 |---|---|
 | **Erzurum Technical University** | B.Sc. Computer Engineering (English) · 2022–2027 |
-| **Politechnika Lubelska** | Erasmus+ Exchange · GPA 3.74/4.0 · Oct 2024 – Feb 2025 |
+| **Politechnika Lubelska** | Erasmus+ Exchange · Oct 2024 – Feb 2025 |
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=80&section=footer" width="100%"/>
