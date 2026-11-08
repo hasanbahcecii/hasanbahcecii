@@ -1,111 +1,149 @@
 <div align="center">
-  <h1>Hasan Bahçeci</h1>
-  <h3>Computer Engineering Student · AI/ML Engineer in Training</h3>
-  <p>Building end-to-end AI systems — from architecture design to production deployment</p>
 
-  <a href="https://www.linkedin.com/in/hasanbahceci">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:hasan.bahceci021@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://hasanbahceci-voice-assistant.hf.space">
-    <img src="https://img.shields.io/badge/🎙️ Voice Demo-FF4B4B?style=for-the-badge"/>
-  </a>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=120&section=header&text=Hasan%20Bahçeci&fontSize=36&fontColor=e6edf3&fontAlignY=65&desc=Computer%20Engineering%20·%20Robotics%20%26%20Embedded%20AI&descSize=14&descAlignY=85&descColor=8b949e" width="100%"/>
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hasanbahceci)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:hasan.bahceci021@gmail.com)
+[![Demo](https://img.shields.io/badge/Live_Demo-FF4B4B?style=flat-square&logo=huggingface&logoColor=white)](https://hasanbahceci-voice-assistant.hf.space)
+
+<br/>
+
+> Autonomous systems from perception to actuation —
+> ROS2, sensor fusion, edge inference, and embedded firmware.
+
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## ⚡ Projects
 
-### 🎯 UAV Target Selection — TEKNOFEST Combat UAV
-**PyTorch · Transformer · GNN · TCN · Multi-Architecture Benchmark**
+<table>
+<tr>
+<td width="50%" valign="top">
 
-[![GitHub](https://img.shields.io/badge/GitHub-uav--target--selection-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/uav-target-selection)
+### 🔧 ArduCore `WIP`
+**AVR · Register-level C · FSM · Binary Protocol**
 
-Benchmarked 4 architectures (TCN, TCN+GlobalContext, GNN+GRU, Full Transformer) on 15,000 synthetic multi-UAV combat scenarios (9 behaviour types, 1.18M labelled samples). Full Transformer achieved **91.5% val accuracy vs. 82.2% TCN baseline (+9.3 pp)** — selected for ground station deployment. Dual-attention: temporal (6-timestep history) + spatial (inter-UAV).
+Sub-system controller on ATmega328P — no `delay()`, no `analogWrite()`, no Servo lib. PCINT-driven echo capture, ISR-based sensor averaging, binary host-command framing, 5-state FSM.
 
-`91.5% val acc · 137K params · <1ms GPU inference · 1 Hz telemetry budget`
+Roadmap → custom USART driver · Timer1 Fast PWM · WDT · **STM32 port**
 
----
+[![GitHub](https://img.shields.io/badge/GitHub-arducore-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/arducore)
 
-### 🎙️ LLM-Powered Voice Assistant
-**STT → LLM (OpenAI / Hugging Face) → TTS · Wake Word · 14-module architecture**
+</td>
+<td width="50%" valign="top">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-HuggingFace-yellow?style=flat-square)](https://hasanbahceci-voice-assistant.hf.space)
-[![GitHub](https://img.shields.io/badge/GitHub-voice__assistant-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/voice_assistant)
+### 🎯 UAV Target Selection `private · TEKNOFEST`
+**PyTorch · Transformer · GNN · TCN**
 
-End-to-end voice assistant with dual-backend LLM (OpenAI + Hugging Face), real-time speech recognition, neural TTS, and wake-word detection — modular architecture enabling hot-swap provider with no code change.
+4-architecture benchmark on 1.18M labeled multi-UAV scenarios. Full Transformer: **91.5% val acc** vs 82.2% TCN baseline. Dual-attention: temporal + spatial. Selected for ground station deployment.
 
----
+`137K params · <1ms GPU inference`
 
-### 🔧 Sensor Fault Detection — LSTM-FCN
-**PyTorch · SMOTE · Failure Analysis · UCI SECOM**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔬 Sensor Fault Detection
+**PyTorch · LSTM-FCN · SMOTE · UCI SECOM**
+
+Dual-branch LSTM-FCN on 590-sensor data (93/7 imbalance). Leakage-free pipeline. Failure diagnosed via PCA + t-SNE — dataset-level root cause, not modeling.
+
+`Macro F1: 0.55 · 266K params`
 
 [![GitHub](https://img.shields.io/badge/GitHub-sensor--fault--detection-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/sensor-fault-detection)
 
-Dual-branch LSTM-FCN on 590-sensor semiconductor manufacturing data (93/7 class imbalance). Leakage-free pipeline: split → scale → SMOTE (train only). Diagnosed model limitation via PCA (13% variance) + t-SNE — faulty samples lack separable structure; RF baseline confirmed dataset-level root cause.
+</td>
+<td width="50%" valign="top">
 
-`Macro F1: 0.55 vs dummy baseline 0.48 · 266K params · Failure analysis documented`
+### 🌫️ Air Quality Forecasting
+**PyTorch · FastAPI · Streamlit · Time-Series**
 
----
+Hourly NO₂ from 72-step multivariate stream. Full pipeline: imputation → normalization → LSTM → API → UI.
 
-### 🌫️ Air Quality Forecasting — LSTM Pipeline
-**PyTorch · FastAPI · Streamlit · Multivariate Time-Series**
+`MAE 46.65 μg/m³ · ~35% vs persistence`
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://air-quality-prediction-ehb9tnezgfquw42hvveumr.streamlit.app)
-[![API](https://img.shields.io/badge/API-Render-46E3B7?style=flat-square)](https://air-quality-api-wuxw.onrender.com/docs)
+[![Demo](https://img.shields.io/badge/Demo-Streamlit-FF4B4B?style=flat-square)](https://air-quality-prediction-ehb9tnezgfquw42hvveumr.streamlit.app)
 [![GitHub](https://img.shields.io/badge/GitHub-air--quality--prediction-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/air-quality-prediction)
 
-Forecasts hourly NO₂ from 72-step multivariate sensor stream (UCI Air Quality). Full pipeline: imputation → normalization → sliding-window → LSTM → FastAPI → Streamlit UI.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-`MAE: 46.65 μg/m³ vs persistence baseline ~72 μg/m³ (~35% improvement)`
+### 🎙️ LLM Voice Assistant
+**STT → LLM → TTS · Wake Word · 14 modules**
 
----
+Dual-backend LLM (OpenAI + HuggingFace), real-time STT, neural TTS, wake-word detection. Hot-swap provider with no code change.
 
-### 🐾 Cat vs Dog Classifier — Transfer Learning + ONNX
-**TensorFlow · MobileNetV2 · ONNX Runtime · Streamlit**
+[![Demo](https://img.shields.io/badge/Demo-HuggingFace-yellow?style=flat-square)](https://hasanbahceci-voice-assistant.hf.space)
+[![GitHub](https://img.shields.io/badge/GitHub-voice__assistant-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/voice_assistant)
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=flat-square)](https://hasanbahcecii-cat-dog-image-classifier-app-gtgtuq.streamlit.app)
+</td>
+<td width="50%" valign="top">
+
+### 🐾 Cat vs Dog Classifier
+**TensorFlow · MobileNetV2 · ONNX Runtime**
+
+2-phase transfer learning (frozen extraction → fine-tune). Exported to ONNX for CPU-efficient inference.
+
+`Test Accuracy: 98.70% · ~14ms CPU (ONNX)`
+
+[![Demo](https://img.shields.io/badge/Demo-Streamlit-FF4B4B?style=flat-square)](https://hasanbahcecii-cat-dog-image-classifier-app-gtgtuq.streamlit.app)
 [![GitHub](https://img.shields.io/badge/GitHub-cat--dog--classifier-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/cat-dog-image-classifier-cnn)
 
-MobileNetV2 transfer learning (2-phase: frozen extraction → fine-tuning) with data augmentation. Exported to ONNX for CPU-efficient inference.
-
-`Test Accuracy: 98.70% · ~14ms CPU inference (ONNX)`
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🛠️ Tech Stack
 
-**AI / Machine Learning**
+**Robotics & Embedded**
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=TensorFlow&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![ROS2](https://img.shields.io/badge/ROS2_Humble-22314E?style=flat-square&logo=ros&logoColor=white)
+![C++](https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+`NVIDIA Jetson TX2 · CAN bus · GigE Vision · STM32 · AVR/ATmega328P · Arduino · Verilog · TensorRT · Docker`
+
+**AI / ML**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
-`CNN · RNN · LSTM · GRU · TCN · GNN · Transformer · Transfer Learning · Time-Series · Computer Vision`
+`CNN · LSTM · GRU · TCN · GNN · Transformer · UKF · Transfer Learning · Time-Series · Computer Vision`
 
 **Deployment & Tools**
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
 `REST APIs · OpenAI API · Hugging Face · ONNX Runtime`
 
-**Mobile & Embedded**
+**Mobile**
 
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 
-`C/C++ · STM32 · Arduino · Verilog · Flutter (Dart)`
+`Dart`
 
 ---
 
 ## 🎓 Education
 
-**Erzurum Technical University** — B.Sc. Computer Engineering (English) · 2022–2027  
-**Politechnika Lubelska** — Erasmus+ Exchange · Oct 2024 – Feb 2025
+| | |
+|---|---|
+| **Erzurum Technical University** | B.Sc. Computer Engineering (English) · 2022–2027 |
+| **Politechnika Lubelska** | Erasmus+ Exchange · GPA 3.74/4.0 · Oct 2024 – Feb 2025 |
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=80&section=footer" width="100%"/>
+</div>
