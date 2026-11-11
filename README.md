@@ -58,8 +58,6 @@ Hourly NO₂ from 72-step multivariate stream. Full pipeline: imputation → nor
 [![GitHub](https://img.shields.io/badge/GitHub-air--quality--prediction-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/air-quality-prediction)
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🎙️ LLM Voice Assistant
@@ -70,7 +68,6 @@ Dual-backend LLM (OpenAI + HuggingFace), real-time STT, neural TTS, wake-word de
 [![Demo](https://img.shields.io/badge/Demo-HuggingFace-yellow?style=flat-square)](https://hasanbahceci-voice-assistant.hf.space)
 [![GitHub](https://img.shields.io/badge/GitHub-voice__assistant-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/voice_assistant)
 
-</td>
 </td>
 </tr>
 </table>
