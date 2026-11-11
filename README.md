@@ -47,18 +47,6 @@ Roadmap → custom USART driver · Timer1 Fast PWM · WDT · **STM32 port**
 <tr>
 <td width="50%" valign="top">
 
-### 🔬 Sensor Fault Detection
-**PyTorch · LSTM-FCN · SMOTE · UCI SECOM**
-
-Dual-branch LSTM-FCN on 590-sensor data (93/7 imbalance). Leakage-free pipeline. Failure diagnosed via PCA + t-SNE — dataset-level root cause, not modeling.
-
-`Macro F1: 0.55 · 266K params`
-
-[![GitHub](https://img.shields.io/badge/GitHub-sensor--fault--detection-black?style=flat-square&logo=github)](https://github.com/hasanbahcecii/sensor-fault-detection)
-
-</td>
-<td width="50%" valign="top">
-
 ### 🌫️ Air Quality Forecasting
 **PyTorch · FastAPI · Streamlit · Time-Series**
 
